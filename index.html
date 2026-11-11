@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT BILIMDONI | Jadra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <header class="topbar">
+    <div class="brand"><span>IT</span> BILIMDONI</div>
+    <div class="author">AKRAMJONOVA JADRA MARATOVNA</div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="screen active">
+      <div class="hero">
+        <div class="hero-tag">ULTIMATE IT CHALLENGE</div>
+        <div class="hero-icon">⌘</div>
+        <h1>IT <span>BILIMDONI</span></h1>
+        <p class="subtitle">Bilimingizni sinang. Chegaralarni buzing.</p>
+        <p class="description">
+          Dasturlash, algoritmlar, kompyuter arxitekturasi,
+          kiberxavfsizlik va sun'iy intellekt bo‘yicha
+          murakkab savollar maydoniga xush kelibsiz.
+        </p>
+
+        <div class="stats-preview">
+          <div><strong>30+</strong><small>Murakkab savol</small></div>
+          <div><strong>10</strong><small>Savol / o‘yin</small></div>
+          <div><strong>∞</strong><small>Imkoniyat</small></div>
+        </div>
+
+        <div class="settings">
+          <label for="difficulty">Qiyinlik darajasi</label>
+          <select id="difficulty">
+            <option value="all">Barcha darajalar</option>
+            <option value="expert">Ekspert</option>
+            <option value="olympiad">Olimpiada</option>
+          </select>
+
+          <label for="category">IT yo‘nalishi</label>
+          <select id="category">
+            <option value="all">Barcha yo‘nalishlar</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Kotlin">Kotlin</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Algorithms">Algoritmlar</option>
+            <option value="Database">Ma'lumotlar bazasi</option>
+            <option value="Security">Kiberxavfsizlik</option>
+            <option value="Architecture">Kompyuter arxitekturasi</option>
+            <option value="AI">Sun'iy intellekt</option>
+          </select>
+        </div>
+
+        <button class="main-btn" id="startBtn">MUSOBAQANI BOSHLASH →</button>
+        <div class="best-score">ENG YAXSHI NATIJA: <span id="bestScore">0</span> BALL</div>
+      </div>
+    </section>
+
+    <section id="game" class="screen">
+      <div class="game-top">
+        <div>
+          <span class="muted">SAVOL</span>
+          <h2><span id="currentNumber">1</span><small> / 10</small></h2>
+        </div>
+        <div class="timer-box">
+          <span>QOLGAN VAQT</span>
+          <strong id="timer">45</strong>
+        </div>
+        <div class="score-box">
+          <span>JAMI BALL</span>
+          <strong id="score">0</strong>
+        </div>
+      </div>
+
+      <div class="progress-track"><div id="progress"></div></div>
+
+      <div class="question-card">
+        <div class="question-meta">
+          <span id="questionCategory">PYTHON</span>
+          <span id="questionDifficulty">EKSPERT</span>
+        </div>
+        <h2 id="questionText">Savol yuklanmoqda...</h2>
+
+        <div id="options" class="options"></div>
+
+        <div class="custom-answer">
+          <button id="otherBtn" class="other-btn">✎ Boshqa javobni yozaman</button>
+          <div id="customArea" class="custom-area hidden">
+            <input id="customInput" type="text" placeholder="Javobingizni yozing...">
+            <button id="customSubmit">Javobni tekshirish</button>
+          </div>
+        </div>
+
+        <div id="feedback" class="feedback hidden"></div>
+        <button id="nextBtn" class="main-btn hidden">KEYINGI SAVOL →</button>
+      </div>
+      <button class="exit-btn" id="exitBtn">← Musobaqadan chiqish</button>
+    </section>
+
+    <section id="result" class="screen">
+      <div class="result-card">
+        <div class="result-icon" id="resultIcon">🏆</div>
+        <div class="hero-tag">CHALLENGE COMPLETED</div>
+        <h1 id="resultTitle">Ajoyib!</h1>
+        <p id="resultMessage"></p>
+        <div class="final-score"><span id="finalScore">0</span><small> BALL</small></div>
+        <div class="result-stats">
+          <div><strong id="correctCount">0</strong><small>To‘g‘ri</small></div>
+          <div><strong id="wrongCount">0</strong><small>Noto‘g‘ri</small></div>
+          <div><strong id="percent">0%</strong><small>Natija</small></div>
+        </div>
+        <div id="review" class="review"></div>
+        <button class="main-btn" id="restartBtn">QAYTA O‘YNASH ↻</button>
+        <button class="exit-btn" id="homeBtn">BOSH SAHIFA</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>LOYIHA MUALLIFI: <strong>AKRAMJONOVA JADRA MARATOVNA</strong></p>
+    <p>LOYIHA BAJARUVCHISI: <strong>AKRAMJONOVA JADRA MARATOVNA</strong></p>
+    <small>IT BILIMDONI © 2026 | BILIM — ENG KATTA KUCH</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
